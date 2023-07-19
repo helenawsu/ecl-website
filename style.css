@@ -1,0 +1,22 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+body {
+  font-family: 'Lunasima', sans-serif;
+  color: black;
+  background-color: rgb(15, 22, 39);
+  margin: 0;
+}
+main {
+  margin-top:-147.83px;
+
+}
+img {
+  opacity: 1;
+}
+a:-webkit-any-link { 
+  color: rgb(15, 22, 39);
+ }
+ a:hover 
+ { text-decoration: none; color: rgb(235, 167, 81); }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>ECL</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="header-1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lunasima&display=swap" rel="stylesheet">
+
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <script>
+      let navToggle = document.querySelector(".nav__toggle");
+let navWrapper = document.querySelector(".nav__wrapper");
+navToggle.addEventListener("click", function () {
+  if (navWrapper.classList.contains("active")) {
+    this.setAttribute("aria-expanded", "false");
+    this.setAttribute("aria-label", "menu");
+    navWrapper.classList.remove("active");
+  } else {
+    navWrapper.classList.add("active");
+    this.setAttribute("aria-label", "close menu");
+    this.setAttribute("aria-expanded", "true");
+  }
+});
+    </script>
+  </head>
+  <body>
+
+<header class="site-header">
+  <div class="wrapper site-header__wrapper">
+    <a href="index.html" class="brand"><h1>Experimental Cognition Lab</h1></a>
+    <nav class="nav">
+      <button class="nav__toggle" aria-expanded="false" type="button">
+        menu
+      </button>
+      <ul class="nav__wrapper">
+        <li class="nav__item"><a href="about.html"><h2>About</h2></a></li>
+        <li class="nav__item"><a href="research.html"><h2>Research</h2></a></li>
+        <li class="nav__item"><a href="contact.html"><h2>Contact</h2></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+
+        <img src="btucb.png" alt="background" style="width:100%;">
+
+
+  
+    </main>
+	<!-- <script src="index.js"></script> -->
+  </body>
+
+</html>
